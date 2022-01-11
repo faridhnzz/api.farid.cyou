@@ -19,7 +19,7 @@ module.exports = async (req, res, next) => {
     });
 
     res.set('Etag', result.headers['etag'] || etag(URL));
-    return json(res, result.data);
+    return json(res, result.data.list);
   } catch (err) {
     console.log(err);
     next();

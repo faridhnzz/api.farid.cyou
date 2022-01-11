@@ -7,5 +7,6 @@ module.exports = {
   instagram: require('./api/instagram'),
   translate: require('./api/translate'),
   weather: require('./api/weather'),
-  bmkg_gempa: require('./api/bmkg-gempa'),
+  bmkg_gempa: require('./api/bmkg/quake'),
+  bmkg_cuaca: require('./api/bmkg/weather'),
 };

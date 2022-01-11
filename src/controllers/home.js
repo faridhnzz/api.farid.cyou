@@ -32,13 +32,15 @@ module.exports = async (req, res) => {
       },
       bmkg_data: {
         quake: {
-          Endpoint: '/api/bmkg-gempa',
-          Example: `${fullUrl}api/bmkg-gempa`,
+          Endpoint: '/api/bmkg-quake',
+          Endpoint_1: '/api/bmkg-quake/recent',
+          Endpoint_2: '/api/bmkg-quake/felt',
+          Example: `${fullUrl}api/bmkg-quake`,
         },
         weather: {
-          status: 'SOON',
-          Endpoint: '/api/bmkg-weather',
-          Example: `${fullUrl}api/bmkg-weather`,
+          Endpoint: '/api/bmkg-weather/:province',
+          Endpoint_1: '/api/bmkg-weather/:province/:city',
+          Example: `${fullUrl}api/bmkg-weather/jawa-tengah/semarang`,
         },
       },
     },
