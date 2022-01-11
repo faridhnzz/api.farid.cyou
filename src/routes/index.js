@@ -17,7 +17,6 @@ route.group('/api', (router) => {
   router.get('/wikipedia', controllers.wikipedia);
   router.get('/instagram', controllers.instagram);
   router.get('/translate', controllers.translate);
-  router.get('/weather', controllers.weather);
   router.get('/bmkg-quake', controllers.bmkg_gempa.autogempa);
   router.get('/bmkg-quake/recent', controllers.bmkg_gempa.gempaterkini);
   router.get('/bmkg-quake/felt', controllers.bmkg_gempa.gempadirasakan);

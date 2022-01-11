@@ -6,7 +6,6 @@ module.exports = {
   wikipedia: require('./api/wikipedia'),
   instagram: require('./api/instagram'),
   translate: require('./api/translate'),
-  weather: require('./api/weather'),
   bmkg_gempa: require('./api/bmkg/quake'),
   bmkg_cuaca: require('./api/bmkg/weather'),
 };
