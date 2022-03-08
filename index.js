@@ -4,7 +4,7 @@ import * as redis from './src/service/redis.js';
 
 const { IP, PORT } = {
   IP: '127.0.0.1',
-  PORT: '5400',
+  PORT: process.env.PORT || 5400,
 };
 
 const startServer = async () => {
