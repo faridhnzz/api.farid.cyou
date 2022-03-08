@@ -1,7 +1,7 @@
 {
   "name": "api.farid.cyou-esm",
   "version": "1.0.0",
-  "description": "",
+  "description": "cuma api ajah.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -37,7 +37,6 @@
     "express": "^4.17.3",
     "ioredis": "^4.28.5",
     "puppeteer": "^13.4.1",
-    "redis": "^4.0.4",
     "response-time": "^2.3.2",
     "user-agents": "^1.0.945",
     "uuid": "^8.3.2"

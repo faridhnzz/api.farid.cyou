@@ -13,7 +13,6 @@ export async function github(req, res, next) {
     const cacheValue = await redis.get(cacheKey);
 
     if (cacheValue) {
-      console.log('From Cache');
       return json(res, cacheValue);
     } else {
       const URL = `https://luminabot.xyz/api/json/github?username=${encodeURIComponent(username)}`;
