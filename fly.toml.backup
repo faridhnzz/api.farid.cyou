@@ -10,6 +10,12 @@ processes = []
   destination = "/data"
   source = "myApiKuh"
 
+[build]
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["gcr.io/paketo-buildpacks/nodejs"]
+  [build.args]
+    NODE_ENV="development" # for build
+
 [env]
   PORT = "8080"
   NODE_ENV = "production"

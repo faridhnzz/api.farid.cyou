@@ -2,7 +2,7 @@ import chromium from 'chrome-aws-lambda';
 import puppeteer from 'puppeteer';
 import * as fetch from '../../../middleware/fetch.js';
 import * as redis from '../../../service/redis.js';
-import { json, indexJson, errorJson } from '../../../utils/respone.js';
+import { json } from '../../../utils/respone.js';
 
 export async function tiktok(req, res) {
   try {
@@ -38,7 +38,7 @@ export async function tiktok(req, res) {
       const page = await browser.newPage();
 
       async function getLastVideo(url) {
-        await page.goto(url);
+        await page.goto(url, { waitUntil: 'load', timeout: 0 });
         const links = await page.$$eval('.esz6wny0 .e1z53d07:first-child .e1u9v4ua1 a', (link) => link.map((a) => a.href));
         return links[0];
       }

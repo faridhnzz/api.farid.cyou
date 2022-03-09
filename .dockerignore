@@ -1,0 +1,10 @@
+.git
+.github
+.prettierignore
+node_modules
+*Dockerfile*
+*docker-compose*
+fly.toml
+vercel.json
+deploy.sh
+fly.toml.backup
