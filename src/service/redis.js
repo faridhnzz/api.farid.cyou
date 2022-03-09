@@ -25,7 +25,8 @@ export async function flushall() {
 /** redis flush-all manual */
 export async function flushall_manual() {
   client.flushall(function (err, res) {
-    console.log('Redis manual flush-all', res);
+    const log = `Redis manual flush-all : ${res}`;
+    console.log(log);
     client.disconnect();
   });
 }

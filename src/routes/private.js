@@ -1,9 +1,11 @@
 import express from 'express';
 const route = express.Router();
 
-// import { github } from '../controllers/index.js';
+import { vlive, tiktok } from '../controllers/index.js';
 
-// route.get('/github', github.index);
-// route.get('/github/:username', github.github);
+/** Vlive */
+route.get('/vlive', vlive.vlive);
+/** TikTok */
+route.get('/tiktok', tiktok.tiktok);
 
 export default route;

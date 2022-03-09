@@ -8,11 +8,9 @@ const { IP, PORT } = {
 };
 
 const startServer = async () => {
-  // await redis.connect();
-  await redis.flushall();
+  // await redis.flushall();
   app.listen(PORT, function (err) {
     console.log(chalk.bgHex('#BDF4F1').black.bold.underline(`Server listening on `), chalk.bgYellow.black.bold.underline(` http://${IP}:${PORT} `));
-    // console.log('\n');
 
     if (err) {
       console.log(err);

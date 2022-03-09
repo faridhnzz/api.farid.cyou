@@ -6,3 +6,4 @@ export * as instagram from './api-public/instagram/index.js';
 
 /** API Private */
 export * as vlive from './api-private/vlive/index.js';
+export * as tiktok from './api-private/tiktok/index.js';

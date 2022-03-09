@@ -1,5 +1,6 @@
 import express from 'express';
 const route = express.Router();
+import * as redis from '../service/redis.js';
 
 import { home } from '../controllers/index.js';
 
